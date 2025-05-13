@@ -22,8 +22,8 @@ We use the **Amazon Product Dataset** from Kaggle:
 ## 🏗️ Installation & Setup
 ### 1️⃣ Create a Virtual Environment
 ```bash
-python3 -m venv streamlit-env
-source streamlit-env/bin/activate  # On Windows, use `streamlit-env\Scripts\activate`
+python3 -m venv .streamlit-env
+source .streamlit-env/bin/activate  # On Windows, use `streamlit-env\Scripts\activate`
 ```
 
 ### 2️⃣ Install Dependencies
@@ -31,14 +31,9 @@ source streamlit-env/bin/activate  # On Windows, use `streamlit-env\Scripts\acti
 pip install streamlit sentence-transformers faiss-cpu torch transformers langchain openai
 ```
 
-### 3️⃣ Run the Backend API
+### 3️⃣ Run the Streamlit App (Frontend)
 ```bash
-uvicorn search_api:app --host 0.0.0.0 --port 8000 --reload
-```
-
-### 4️⃣ Run the Streamlit App (Frontend)
-```bash
-streamlit run app.py
+streamlit run dashboard.py
 ```
 
 ## 🔥 Features
